@@ -3,8 +3,7 @@ import numpy as np
 from .Charge_neutralizer import NeutraliseCharges
 from. isotope_remover import MolWithoutIsotopesToSmiles
 
-#SALTS_FILE = ("/home/pfas2.0/0921/salts/Salts_from_epa_list.txt")
-SALTS_FILE = ("pfas_atlas/salts/Salts_from_epa_list.txt")
+SALTS_FILE = "classification_helper/salts/Salts_from_epa_list.txt"
 
 
 def mol_from_smiles(smiles):

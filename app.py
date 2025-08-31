@@ -2,7 +2,7 @@
 import streamlit as st
 from classification_helper import classify_pfas_molecule
 from utils.utils import draw_mol, find_similar
-import pandas as pd
+from rdkit_helper import rdkit_smiles_from_input_smiles
 
 st.set_page_config(page_title="PFAS Classifier", page_icon="🧪", layout="wide")
 
@@ -19,6 +19,7 @@ properties = ['LogP_pred', 'LogVP_pred']
 # --- Sidebar Form ---
 with st.form("pfas_form", clear_on_submit=False):
     smiles = st.text_input("SMILES", placeholder="e.g., O=C(O)C(F)(F)F")
+    smiles = rdkit_smiles_from_input_smiles(smiles)
     submitted = st.form_submit_button("Classify")
 
 # --- Handle submit: run once, store in session state ---
