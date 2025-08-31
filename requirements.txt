@@ -4,7 +4,7 @@ mhfp==1.9.6
 networkx==2.8.8
 numpy==1.24.3
 pandas==2.2.2
-rdkit==2024.03.5
+rdkit-pypi
 scikit_learn==1.2.2
 streamlit==1.30.0
 umap_learn==0.5.6
