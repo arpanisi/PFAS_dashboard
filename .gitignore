@@ -1,0 +1,16 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Virtual envs
+venv/
+.venv/
+pfas_db/
+
+# IDE settings
+.idea/
+*.iml
+
+# Streamlit secrets
+.streamlit/secrets.toml
